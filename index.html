@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="headBar">
+      <h1 class="headBarTitle">Bookshelf Apps</h1>
+    </header>
+    <main>
+      <section class="inputSection">
+        <h2>Tambahkan Buku Baru</h2>
+        <form id="inputBook">
+          <div class="input">
+            <label for="inputBookTitle">Judul</label>
+            <input id="inputBookTitle" type="text" placeholder="Laskar Pelangi" required />
+          </div>
+          <div class="input">
+            <label for="inputBookAuthor">Penulis</label>
+            <input id="inputBookAuthor" type="text" placeholder="Andrea Hirata" required />
+          </div>
+          <div class="input">
+            <label for="inputBookYear">Tahun</label>
+            <input id="inputBookYear" type="number" placeholder="2005" required />
+          </div>
+          <div class="inputInline">
+            <label for="inputBookIsCompleted">Dibaca</label>
+            <input id="inputBookIsCompleted" type="checkbox" />
+          </div>
+          <button id="bookSubmit" type="submit">Tambah Buku</button>
+        </form>
+      </section>
+
+      <section class="searchSection">
+        <h2>Cari Buku</h2>
+        <form id="searchBook">
+          <input id="searchBookTitle" placeholder="Search..." type="search" />
+        </form>
+      </section>
+
+      <section class="bookShelf">
+        <h2>Belum selesai dibaca</h2>
+        <div id="incompleteBookshelfList" class="bookList"></div>
+      </section>
+      <section class="bookShelf">
+        <h2>Selesai dibaca</h2>
+        <div id="completeBookshelfList" class="bookList"></div>
+      </section>
+    </main>
+    <footer>
+      <p>2022 - Arif Ardiansyah</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

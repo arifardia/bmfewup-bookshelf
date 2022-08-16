@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  max-width: 600px;
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.headBar {
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: blueviolet;
+  color: #fff;
+  border-bottom: 2px solid #000;
+}
+
+.inputSection,
+.bookShelf,
+.searchSection {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+.bookShelf,
+.searchSection {
+  margin-top: 25px;
+}
+.inputSection > h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.inputSection > form > .input {
+  margin: 5px 0;
+}
+.inputSection > form > .input > label {
+  font-size: 18px;
+}
+.inputSection > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 10px 0;
+}
+.inputSection > form > .inputInline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+.inputSection > form > .inputInline > label {
+  color: #000;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.inputSection > form > button {
+  background-color: blueviolet;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.searchSection > form {
+  margin: 5px 0;
+}
+.searchSection > h2 {
+  text-align: center;
+}
+.searchSection > form > input {
+  display: inline;
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.bookShelf > h2 {
+  color: #000;
+  text-align: center;
+  margin: 15px;
+}
+.bookShelf > .bookList {
+  padding: 15px;
+}
+.bookShelf > .bookList > .bookItems {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bookShelf > .bookList > .bookItems > .bookItem > h3,
+p {
+  margin: 10px 0;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+}
+.action > button {
+  cursor: pointer;
+  top: 50px;
+  height: 25px;
+  width: 25px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px;
+  background-color: blueviolet;
+}
+
+.checkButton {
+  background-image: url(img/checked.svg);
+}
+
+.undoButton {
+  background-image: url(img/undo.svg);
+}
+
+.trashButton {
+  background-image: url(img/delete.svg);
+}
+
+footer {
+  border-top: 2px solid #000;
+  padding: 20px;
+  color: white;
+  background-color: blueviolet;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .bookShelf > .bookList > .bookItems {
+    flex-direction: column;
+  }
+  .bookShelf > .bookList > .bookItems > .bookItem > h3,
+  p {
+    text-align: center;
+  }
+}
